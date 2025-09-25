@@ -13,7 +13,8 @@ object.get("/api",(req,res)=>{
 });
 
 object.post("/post",(req,res)=>{
-    res.status(201).json({"name":"kunal","id":2});
+    const name = req.body.name;
+    res.status(201).json({"name":name,"id":2});
 
 });
 
