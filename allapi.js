@@ -23,7 +23,7 @@ object.put("/put",(req,res)=>{
 
 });
 
-object.delete("/delite",(req,res)=>{
-    res.status(201).json({"name":"kunal","id":2});
+object.delete("/delete",(req,res)=>{
+    res.status(201).json({message: "User deleted"});
 
 });
