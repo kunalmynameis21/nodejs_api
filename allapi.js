@@ -1,0 +1,28 @@
+const app = require("express");
+const object= app();
+object.use(app.json());
+object.listen(3000,()=>{
+    console.log("wdsd");
+
+}); 
+
+object.get("/api",(req,res)=>{
+    
+    res.status(200).json({"name":"kunal"});
+
+});
+
+object.post("/post",(req,res)=>{
+    res.status(201).json({"name":"kunal","id":2});
+
+});
+
+object.put("/put",(req,res)=>{
+    res.status(201).json({"name":"kunal","id":2});
+
+});
+
+object.delete("/delite",(req,res)=>{
+    res.status(201).json({"name":"kunal","id":2});
+
+});
